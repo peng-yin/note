@@ -1,4 +1,7 @@
 ## Welcome to my blog
+
+> 我的博客，记录学习的一些笔记，如有喜欢，欢迎star
+
 ---
 
 ### :microscope: 博客分类
@@ -17,9 +20,6 @@
 
 
 ### :coffee: 推荐网站、文章链接
-
-> 这一部分是我觉得非常不错的文章，推荐一下
-
 
 - [Online video tutorials & training](https://www.lynda.com/)
 
