@@ -1,5 +1,10 @@
 theme: jekyll-theme-cayman
+show_downloads: false
+title: Note
+description: 博客， 学习笔记
 github:
-  is_project_page: false
+  is_project_page: true
+  repository_url: https://github.com/peng-yin/note
 plugins:
   - jemoji
+  
