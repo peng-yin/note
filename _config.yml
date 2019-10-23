@@ -1,10 +1,10 @@
 theme: jekyll-theme-cayman
-show_downloads: false
 title: Note
-description: 博客， 学习笔记
+author: yinpeng
+description: 分享一些编程的学习笔记
+email: 674891229@qq.com
 github:
-  is_project_page: true
-  repository_url: https://github.com/peng-yin/note
+  is_project_page: false
 plugins:
   - jemoji
   - jekyll-feed
