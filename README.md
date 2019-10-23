@@ -1,5 +1,7 @@
 ## Welcome to my blog
 
+---
+
 ### :microscope: 博客分类
 
 - ##### [:hamburger: CSS ](https://github.com/peng-yin/note/projects/1)
@@ -14,7 +16,6 @@
 - ##### :rice: 性能优化
 - ##### :guitar: 交互体验
 
----
 
 ### :coffee: 推荐网站、文章链接
 
