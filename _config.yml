@@ -7,4 +7,5 @@ github:
   repository_url: https://github.com/peng-yin/note
 plugins:
   - jemoji
-  
+  - jekyll-feed
+  - jekyll-seo-tag
