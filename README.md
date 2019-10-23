@@ -2,12 +2,12 @@
 
 ### :microscope: 博客分类
 
-- ##### :hamburger: CSS 
+- ##### [:hamburger: CSS ](https://github.com/peng-yin/note/projects/1)
 - ##### [:lollipop: JS ](https://github.com/peng-yin/note/projects/2)
 - ##### :jack_o_lantern: Vue 
 - ##### :ghost: React
-- ##### :art: Linux
-- ##### :tophat: 规范
+- ##### [:art: 运维](https://github.com/peng-yin/note/projects/3)
+- ##### [:tophat: 规范](https://github.com/peng-yin/note/projects/4)
 - ##### :ramen: 工具使用
 - ##### :ring: 数据库 
 - ##### :ski: 数据结构与算法
