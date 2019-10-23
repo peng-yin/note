@@ -1,7 +1,5 @@
 theme: jekyll-theme-cayman
 github:
-  is_project_page: true
-  repository_name: your blog's name
-  repository_url: your repository url
+  is_project_page: false
 plugins:
   - jemoji
