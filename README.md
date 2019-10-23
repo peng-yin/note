@@ -12,7 +12,7 @@
 - ##### :ring: 数据库 
 - ##### :ski: 数据结构与算法
 - ##### :rice: 性能优化
-- ##### :sparkling_heart: 交互体验
+- ##### :guitar: 交互体验
 
 ---
 
@@ -21,25 +21,25 @@
 > 这一部分是我觉得非常不错的文章，推荐一下
 
 
-[Online video tutorials & training](https://www.lynda.com/)
+- [Online video tutorials & training](https://www.lynda.com/)
 
 
-[Scotch ♥ Developers bringing fire to the people.](https://scotch.io/)
+- [Scotch ♥ Developers bringing fire to the people.](https://scotch.io/)
 
 
-[CodePen - Front End Developer Playground & Code Editor in the Browser ](https://codepen.io/)
+- [CodePen - Front End Developer Playground & Code Editor in the Browser ](https://codepen.io/)
 
-[demosthenes.info](http://thenewcode.com/)
+- [demosthenes.info](http://thenewcode.com/)
 
-[Medium](https://medium.com/)
-
-
-[CSS-Tricks](https://css-tricks.com/)
+- [Medium](https://medium.com/)
 
 
-[thebestdesigns.com - 站如其名，找灵感的最佳去处。](https://www.thebestdesigns.com/)
+- [CSS-Tricks](https://css-tricks.com/)
 
-[Tuts+ 涵盖前后端、设计、游戏、多媒体等诸多方面](https://tutsplus.com/tutorials)
+
+- [thebestdesigns.com - 站如其名，找灵感的最佳去处。](https://www.thebestdesigns.com/)
+
+- [Tuts+ 涵盖前后端、设计、游戏、多媒体等诸多方面](https://tutsplus.com/tutorials)
 
 
 
