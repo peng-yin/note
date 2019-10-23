@@ -5,6 +5,7 @@ description: 分享一些编程的学习笔记
 email: 674891229@qq.com
 github:
   is_project_page: false
+  show_downloads: false
 plugins:
   - jemoji
   - jekyll-feed
