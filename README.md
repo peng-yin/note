@@ -3,7 +3,7 @@
 ### :microscope: 博客分类
 
 - ##### :hamburger: CSS 
-- ##### :lollipop: JS 
+- ##### [:lollipop: JS ](https://github.com/peng-yin/note/projects/2)
 - ##### :jack_o_lantern: Vue 
 - ##### :ghost: React
 - ##### :art: Linux
