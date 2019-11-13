@@ -8,8 +8,8 @@
 
 - ##### [:hamburger: CSS ](https://github.com/peng-yin/note/projects/1)
 - ##### [:lollipop: JS ](https://github.com/peng-yin/note/projects/2)
-- ##### :jack_o_lantern: Vue 
-- ##### :ghost: React
+- ##### [:jack_o_lantern: Vue](https://github.com/peng-yin/note/projects/6) 
+- ##### [:ghost: React](https://github.com/peng-yin/note/projects/5)
 - ##### [:art: 运维](https://github.com/peng-yin/note/projects/3)
 - ##### [:tophat: 规范](https://github.com/peng-yin/note/projects/4)
 - ##### :ramen: 工具使用
