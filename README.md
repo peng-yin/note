@@ -43,6 +43,8 @@
 
 - #### [Tuts+ 涵盖前后端、设计、游戏、多媒体等诸多方面](https://tutsplus.com/tutorials)
 
+- #### [30 seconds of code](https://www.30secondsofcode.org/)
+
 
 
 
