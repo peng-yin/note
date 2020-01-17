@@ -4,7 +4,7 @@ author: yinpeng
 description: To Keep Learning、Keep Thinking、Keep Focus
 email: 674891229@qq.com
 footer_show_references: false
-favicon: assets/favicon.ico
+favicon: ./favicon.ico
 show_excerpts: false 
 github:
   is_project_page: false
