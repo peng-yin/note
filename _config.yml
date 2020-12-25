@@ -1,7 +1,6 @@
-theme: jekyll-theme-midnight
+theme: jekyll-theme-modernist
 title: Note
 author: yinpeng
-keywords: "note,blog,web" # html meta keywords
 description: To Keep Learning、Keep Thinking、Keep Focus
 github:
   is_project_page: false
