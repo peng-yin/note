@@ -2,4 +2,6 @@ theme: jekyll-theme-cayman
 title: Note
 author: yinpeng
 keywords: "note,blog,web" # html meta keywords
+footer_show_references: false
 description: To Keep Learning、Keep Thinking、Keep Focus
+show_excerpts: false 
