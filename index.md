@@ -1,5 +1,5 @@
 ```js
-:coffee: I am a web developer, Welcome to my blog
+I am a web developer, Welcome to my blog
 ```
 
 ### :coffee: react
