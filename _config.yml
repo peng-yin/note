@@ -3,16 +3,3 @@ title: Note
 author: yinpeng
 keywords: "note,blog,web" # html meta keywords
 description: To Keep Learning、Keep Thinking、Keep Focus
-email: 674891229@qq.com
-footer_show_references: false
-favicon: assets/favicon.ico
-tagline: Another Jekyll theme, Freshman twenty-first
-show_excerpts: false 
-github:
-  is_project_page: false
-  is_user_page: true
-  private: true
-plugins:
-  - jemoji
-  - jekyll-feed
-  - jekyll-seo-tag
