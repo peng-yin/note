@@ -2,7 +2,6 @@ title: Note
 author: yinpeng
 description: 🚀 To Keep Learning、Keep Thinking、Keep Focus
 theme: jekyll-theme-hacker
-favicon: ./favicon.ico
 github:
   repository_url: https://github.com/peng-yin/note/issues
 plugins:
