@@ -3,7 +3,6 @@ author: yinpeng
 description: 🚀 To Keep Learning、Keep Thinking、Keep Focus
 theme: jekyll-theme-hacker
 github:
-  # repository_url: https://github.com/peng-yin/note/issues
   is_project_page: false
 plugins:
   - jemoji
