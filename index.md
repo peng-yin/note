@@ -3,10 +3,10 @@ I am a web developer, Welcome to my blog
 ```
 
 ### :coffee: React
+*   [React运用TypeScript 备忘录](https://github.com/peng-yin/note/issues/53)
 *   [常用的自定义React Hooks](https://github.com/peng-yin/note/issues/45)
 *   [React优化](https://github.com/peng-yin/note/issues/49)
 *   [React组件通信](https://github.com/peng-yin/note/issues/16)
-*   [React运用TypeScript 备忘录](https://github.com/peng-yin/note/issues/53)
 
 ### :microscope: JS
 *   [优化JavaScript代码的细节](https://github.com/peng-yin/note/issues/5)
