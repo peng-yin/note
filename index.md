@@ -8,6 +8,9 @@ I am a web developer, Welcome to my blog
 *   [React优化](https://github.com/peng-yin/note/issues/49)
 *   [React组件通信](https://github.com/peng-yin/note/issues/16)
 
+### :ski: Vue
+*   [Vue-Mixin数据管理(model层)](https://github.com/peng-yin/note/issues/54)
+
 ### :microscope: JS
 *   [优化JavaScript代码的细节](https://github.com/peng-yin/note/issues/5)
 
