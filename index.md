@@ -4,7 +4,8 @@ I am a web developer, Welcome to my blog
 
 ### :coffee: React
 *   [React运用TypeScript 备忘录](https://github.com/peng-yin/note/issues/53)
-*   [常用的自定义React Hooks](https://github.com/peng-yin/note/issues/45)
+*   [总结React Hooks 使用中遇到的问题](https://github.com/peng-yin/note/issues/55)
+*   [自定义React Hooks](https://github.com/peng-yin/note/issues/45)
 *   [React优化](https://github.com/peng-yin/note/issues/49)
 *   [React组件通信](https://github.com/peng-yin/note/issues/16)
 
