@@ -19,6 +19,7 @@ I am a web developer, Welcome to my blog
 *   [CSS Variables](https://github.com/peng-yin/note/issues/3)
 
 ### :jack_o_lantern: notes
+*   [Worker 调研](https://github.com/peng-yin/note/issues/56)
 *   [Docker](https://github.com/peng-yin/note/issues/47)
 *   [typescript](https://github.com/peng-yin/note/issues/25)
 *   [Jenkins](https://github.com/peng-yin/note/issues/21)
