@@ -28,3 +28,7 @@ I am a web developer, Welcome to my blog
 *   [linux 信息查看及命令](https://github.com/peng-yin/note/issues/8)
 *   [规范commit message, 并自动生成 CHANGELOG](https://github.com/peng-yin/note/issues/43)
 *   [搭建业务组件库关键点](https://github.com/peng-yin/note/issues/59)
+*   [文件上传](https://github.com/peng-yin/note/issues/70)
+*   [浏览器缓存机制](https://github.com/peng-yin/note/issues/69)
+*   [常用到的优化](https://github.com/peng-yin/note/issues/66)
+*   [http](https://github.com/peng-yin/note/issues/67)
