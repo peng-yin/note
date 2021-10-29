@@ -3,6 +3,7 @@ I am a web developer, Welcome to my blog
 ```
 
 ### :coffee: React
+*   [useEffect 最佳实践](https://github.com/peng-yin/note/issues/72)
 *   [TypeScript 高级类型总结](https://github.com/peng-yin/note/issues/58)
 *   [总结React Hooks 使用中遇到的问题](https://github.com/peng-yin/note/issues/55)
 *   [React运用TypeScript 备忘录](https://github.com/peng-yin/note/issues/53)
@@ -35,3 +36,4 @@ I am a web developer, Welcome to my blog
 *   [https](https://github.com/peng-yin/note/issues/68)
 *   [浏览器渲染原理与优化](https://github.com/peng-yin/note/issues/63)
 *   [请求优化-中断请求](https://github.com/peng-yin/note/issues/65)
+*   [前端监控](https://github.com/peng-yin/note/issues/71)
