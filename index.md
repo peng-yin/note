@@ -3,7 +3,7 @@ I am a web developer, Welcome to my blog
 ```
 
 ### :coffee: React
-*   [useEffect 最佳实践](https://github.com/peng-yin/note/issues/72)
+*   [useEffect 最佳实践](https://github.com/peng-yin/note/issues/73)
 *   [TypeScript 高级类型总结](https://github.com/peng-yin/note/issues/58)
 *   [总结React Hooks 使用中遇到的问题](https://github.com/peng-yin/note/issues/55)
 *   [React运用TypeScript 备忘录](https://github.com/peng-yin/note/issues/53)
