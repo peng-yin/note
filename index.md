@@ -2,7 +2,7 @@
 I am a web developer, Welcome to my blog
 ```
 ### :jack_o_lantern: notes
-*   [常用到的 react hooks](antd-plus-seven.vercel.app)
+*   [常用到的 react hooks](https://antd-plus-seven.vercel.app)
 *   [Worker 调研](https://github.com/peng-yin/note/issues/56)
 *   [微前端笔记](https://github.com/peng-yin/note/issues/74)
 *   [Docker](https://github.com/peng-yin/note/issues/47)
