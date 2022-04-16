@@ -15,7 +15,6 @@ I am a web developer, Welcome to my blog
 *   [浏览器缓存机制](https://github.com/peng-yin/note/issues/69)
 *   [常用到的优化](https://github.com/peng-yin/note/issues/66)
 *   [http](https://github.com/peng-yin/note/issues/67)
-*   [浏览器渲染原理与优化](https://github.com/peng-yin/note/issues/63)
 *   [请求优化-中断请求](https://github.com/peng-yin/note/issues/65)
 *   [前端监控](https://github.com/peng-yin/note/issues/71)
 *   [数据埋点](https://github.com/peng-yin/note/issues/75)
