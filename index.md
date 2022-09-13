@@ -6,7 +6,6 @@ I am a web developer, Welcome to my blog
 *   [微前端笔记](https://github.com/peng-yin/note/issues/74)
 *   [工程部署规范](https://github.com/peng-yin/note/issues/85)
 *   [前后端分离下的工作方式 ](https://github.com/peng-yin/note/issues/84)
-*   [常用到的 react hooks](https://antd-plus-seven.vercel.app/hooks/use-debounce)
 *   [Worker 调研](https://github.com/peng-yin/note/issues/56)
 *   [Docker](https://github.com/peng-yin/note/issues/47)
 *   [Jenkins](https://github.com/peng-yin/note/issues/21)
