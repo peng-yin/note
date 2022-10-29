@@ -21,6 +21,7 @@ I am a web developer, Welcome to my blog
 *   [前端监控](https://github.com/peng-yin/note/issues/71)
 *   [数据埋点](https://github.com/peng-yin/note/issues/75)
 *   [git 杂记](https://github.com/peng-yin/note/issues/64)
+*   [项目选型与环境搭建](https://github.com/peng-yin/note/issues/86)
 
 ### :coffee: React
 *   [useEffect 最佳实践](https://github.com/peng-yin/note/issues/73)
