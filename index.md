@@ -1,7 +1,13 @@
 ```js
 I am a web developer, Welcome to my blog
 ```
+
 ### :jack_o_lantern: notes
+*   [函数式编程](https://github.com/peng-yin/note/issues/93)
+*   [函数式编程概述](https://github.com/peng-yin/note/issues/102)
+*   [函数计算得到函数](https://github.com/peng-yin/note/issues/109)
+*   [nvm 使用](https://github.com/peng-yin/note/issues/110)
+*   [常用的 git 命令别名](https://github.com/peng-yin/note/issues/111)
 *   [命名方法论 ](https://github.com/peng-yin/note/issues/83)
 *   [微前端笔记](https://github.com/peng-yin/note/issues/74)
 *   [工程部署规范](https://github.com/peng-yin/note/issues/85)
@@ -24,6 +30,7 @@ I am a web developer, Welcome to my blog
 *   [项目选型与环境搭建](https://github.com/peng-yin/note/issues/86)
 
 ### :coffee: React
+*   [React应用开发性能优化手段](https://github.com/peng-yin/note/issues/112)
 *   [useEffect 最佳实践](https://github.com/peng-yin/note/issues/73)
 *   [总结React Hooks 使用中遇到的问题](https://github.com/peng-yin/note/issues/55)
 *   [React运用TypeScript 备忘录](https://github.com/peng-yin/note/issues/53)
