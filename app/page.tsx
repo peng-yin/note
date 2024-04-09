@@ -2,7 +2,7 @@ import ListItem from '../components/ListItem'
 import InitStore from '../components/InitStore'
 
 async function getData() {
-  const res = await fetch('https://api.github.com/repos/peng-yin/note/issues?per_page=200', {
+  const res = await fetch('https://api.github.com/repos/peng-yin/note/issues', {
     headers: {
       authorization: `Bearer ${process.env.PERSONAL_GITHUB_ACCESS_TOKEN}`,
     }

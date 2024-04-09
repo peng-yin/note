@@ -6,6 +6,22 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/legacy/image'
 import { Article } from '@/lib/articleSlice'
 
+const images = [
+  'https://images.pexels.com/photos/18471860/pexels-photo-18471860.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
+  'https://images.pexels.com/photos/12210627/pexels-photo-12210627.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
+  'https://images.pexels.com/photos/20784651/pexels-photo-20784651.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
+  'https://images.pexels.com/photos/20672886/pexels-photo-20672886.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
+  'https://images.pexels.com/photos/16039120/pexels-photo-16039120.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
+  'https://images.pexels.com/photos/19107832/pexels-photo-19107832.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
+  'https://images.pexels.com/photos/19845819/pexels-photo-19845819.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
+  'https://images.pexels.com/photos/4788287/pexels-photo-4788287.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
+]
+
+function getRandomIamge(params:string[]) {
+  const randomIndex = Math.floor(Math.random() * params.length)
+  return params[randomIndex]
+}
+
 export default function ListItem({ article }: { article: Article}) {
   const router = useRouter()
   const createTime = (new Date(article.created_at).toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })).replaceAll(',', '' )
@@ -21,7 +37,7 @@ export default function ListItem({ article }: { article: Article}) {
     if (match && match[1]) {
       return match[1]
     } else {
-      return '' // 如果没有匹配到图片链接，则返回 null
+      return getRandomIamge(images) // 如果没有匹配到图片链接，则返回 null
     }
   }
 
@@ -33,7 +49,7 @@ export default function ListItem({ article }: { article: Article}) {
       </div>
 
       <div className='w-[400px] h-[200px] relative max-lg:w-[100px] max-lg:h-[75px] cursor-pointer'>
-        {/* <Image src='' alt='' layout='fill' objectFit='cover' /> */}
+        <Image src={coverImage} alt='' layout='fill' objectFit='cover' />
       </div>
     </li>
   )
