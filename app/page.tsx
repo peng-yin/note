@@ -16,7 +16,8 @@ async function getData() {
 
 export default async function Home() {
   const { status, articles } = await getData()
-
+  console.log(articles);
+  
   return (
     <main className="w-full max-w-[1200px] mx-auto h-screen overflow-y-scroll overflow-x-hidden no-scrollbar p-16 max-lg:p-4">
       <h1 className='text-7xl max-lg:text-3xl font-bold mb-0'>peng-yin&apos;s</h1>
