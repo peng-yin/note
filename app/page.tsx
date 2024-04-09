@@ -2,9 +2,9 @@ import ListItem from '../components/ListItem'
 import InitStore from '../components/InitStore'
 
 async function getData() {
-  const res = await fetch('https://api.github.com/repos/peng-yin/note/issues', {
+  const res = await fetch('https://api.github.com/repos/peng-yin/note/issues?per_page=200', {
     headers: {
-      // authorization: `Bearer ${process.env.PERSONAL_GITHUB_ACCESS_TOKEN}`,
+      authorization: `Bearer ${process.env.PERSONAL_GITHUB_ACCESS_TOKEN}`,
     }
   })
 
@@ -25,8 +25,8 @@ export default async function Home() {
         <a href="https://github.com/peng-yin" target='__blank' className='icon bg-[url(/github.svg)]'></a>
       </section>
       <InitStore articles={articles} />
-      <p>Status: {status}</p>
-      <p>token: {process.env.PERSONAL_GITHUB_ACCESS_TOKEN?.substring(0, 8)}</p>
+      {/* <p>Status: {status}</p> */}
+      {/* <p>token: {process.env.PERSONAL_GITHUB_ACCESS_TOKEN?.substring(0, 8)}</p> */}
 
       <ul>
         {articles.map((item: any) => {
