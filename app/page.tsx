@@ -16,7 +16,6 @@ async function getData() {
 
 export default async function Home() {
   const { status, articles } = await getData()
-  console.log(articles);
   
   return (
     <main className="w-full max-w-[1200px] mx-auto h-screen overflow-y-scroll overflow-x-hidden no-scrollbar p-16 max-lg:p-4">
@@ -26,8 +25,8 @@ export default async function Home() {
         <a href="https://github.com/peng-yin" target='__blank' className='icon bg-[url(/github.svg)]'></a>
       </section>
       <InitStore articles={articles} />
-      {/* <p>Status: {status}</p> */}
-      {/* <p>token: {process.env.PERSONAL_GITHUB_ACCESS_TOKEN?.substring(0, 8)}</p> */}
+      <p>Status: {status}</p>
+      <p>token: {process.env.PERSONAL_GITHUB_ACCESS_TOKEN?.substring(0, 8)}</p>
 
       <ul>
         {articles.map((item: any) => {
