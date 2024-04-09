@@ -25,8 +25,6 @@ export default async function Home() {
         <a href="https://github.com/peng-yin" target='__blank' className='icon bg-[url(/github.svg)]'></a>
       </section>
       <InitStore articles={articles} />
-      <p>Status: {status}</p>
-      <p>token: {process.env.PERSONAL_GITHUB_ACCESS_TOKEN?.substring(0, 8)}</p>
 
       <ul>
         {articles.map((item: any) => {
