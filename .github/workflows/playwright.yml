@@ -1,0 +1,37 @@
+name: Playwright Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+jobs:
+  build-and-start-server-and-run-e2e-tests:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    - name: Install dependencies and build
+      run: |
+        npm install -g yarn && yarn
+        yarn build
+        yarn start &
+      env:
+          CI: true
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: true
+          PERSONAL_GITHUB_ACCESS_TOKEN: ${{secrets.PERSONAL_GITHUB_ACCESS_TOKEN}}
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps
+    - name: Run Playwright tests
+      run: npx playwright test
+      env:
+        BASE_URL: http://localhost:3000
+    - uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30

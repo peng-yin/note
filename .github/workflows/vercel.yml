@@ -1,0 +1,16 @@
+name: Playwright Tests After Deployment
+
+on:
+  deployment_status:
+jobs:
+  run-e2es:
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install -g yarn && yarn && npx playwright install --with-deps
+      - name: Run tests
+        run: npx playwright test
+        env:
+          BASE_URL: https://yinpeng.vercel.app

@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: rgb(251, 244, 229);
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: radial-gradient(circle at 0% 100%, rgb(233, 32, 29), transparent 40%);
+}
+
+* {
+  cursor: default;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .markdown img {
+    max-width: 60%;
+    display: block;
+  }
+  .markdown p > code {
+    padding: 2px 4px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+  }
+  .markdown pre {
+    border: none;
+    overflow: auto;
+    line-height: 1.45;
+    max-height: 35rem;
+    position: relative;
+  }
+  .markdown blockquote {
+    border-left: 2px solid #8e24aa;
+    background: #F6F6F6;
+    color: #555;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    padding: 10px;
+  }
+  .markdown blockquote p:last-child {
+    margin: 0;
+  }
+  .markdown h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .markdown h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .markdown p {
+    margin: 1rem 0;
+  }
+
+  @media not all and (min-width: 1024px) {
+    .markdown h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+@layer components {
+  .icon {
+    @apply inline-block w-6 h-6 mr-2;
+  }
+}
