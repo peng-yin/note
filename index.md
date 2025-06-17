@@ -2,45 +2,7 @@
 I am a web developer, Welcome to my blog
 ```
 
-### :coffee: React
-*   [理解React中Fiber架构](https://github.com/peng-yin/note/issues/119)
-*   [ React应用开发性能优化手段](https://github.com/peng-yin/note/issues/112)
-*   [ 如何设计一个组件？常见的 React 组件设计模式 --- 复合组件](https://github.com/peng-yin/note/issues/101)
-*   [useEffect 最佳实践](https://github.com/peng-yin/note/issues/73)
-*   [React 性能优化](https://github.com/peng-yin/note/issues/60)
-*   [总结React Hooks 使用中遇到的问题](https://github.com/peng-yin/note/issues/55)
-*   [总结React运用TypeScript的问题](https://github.com/peng-yin/note/issues/53)
-*   [React性能优化之memo、 PureComponent、shouldComponentUpdate 的使用](https://github.com/peng-yin/note/issues/49)
-*   [常用的自定义React Hooks](https://github.com/peng-yin/note/issues/45)
-*   [规范commit message, 并自动生成 CHANGELOG](https://github.com/peng-yin/note/issues/43)
-*   [React 组件通信](https://github.com/peng-yin/note/issues/16)
-
-### :microscope: JS
-*   [egg.js vs nest.js && 原理](https://github.com/peng-yin/note/issues/120)
-*   [Lowcode - js沙箱](https://github.com/peng-yin/note/issues/118)
-*   [nestJS学习笔记📒](https://github.com/peng-yin/note/issues/115)
-*   [vs code jsconfig 配置](https://github.com/peng-yin/note/issues/100)
-*   [typescript](https://github.com/peng-yin/note/issues/25)
-*   [优化JavaScript代码的细节](https://github.com/peng-yin/note/issues/5)
-
-### :tophat: Typescript
-*   [Typescript实用的内置类型](https://github.com/peng-yin/note/issues/80)
-*   [Typescript使用技巧](https://github.com/peng-yin/note/issues/79)
-*   [Typescript关键字infer的理解与使用](https://github.com/peng-yin/note/issues/78)
-*   [如何编写高质量TypeScript代码](https://github.com/peng-yin/note/issues/77)
-*   [Typescript 高级技巧](https://github.com/peng-yin/note/issues/76)
-*   [TypeScript 高级类型总结](https://github.com/peng-yin/note/issues/58)
-
-### :art: CSS
-*   [CSS Variables ](https://github.com/peng-yin/note/issues/3)
-
-### :custard: Vue
-*   [Vue-Mixin数据管理(model层)](https://github.com/peng-yin/note/issues/54)
-
 ### :jack_o_lantern: notes
-*   [build(deps-dev): bump cross-spawn from 7.0.3 to 7.0.6](https://github.com/peng-yin/note/pull/125)
-*   [build(deps): bump next from 14.1.4 to 14.2.10](https://github.com/peng-yin/note/pull/124)
-*   [build(deps): bump micromatch from 4.0.5 to 4.0.8](https://github.com/peng-yin/note/pull/123)
 *   [webpack体积优化及打包速度提升总结](https://github.com/peng-yin/note/issues/122)
 *   [书写高质量SQL的30条建议](https://github.com/peng-yin/note/issues/116)
 *   [低代码](https://github.com/peng-yin/note/issues/114)
@@ -88,4 +50,39 @@ I am a web developer, Welcome to my blog
 *   [Jenkins](https://github.com/peng-yin/note/issues/21)
 *   [linux 信息查看及命令](https://github.com/peng-yin/note/issues/8)
 *   [nginx](https://github.com/peng-yin/note/issues/7)
+
+### :coffee: React
+*   [理解React中Fiber架构](https://github.com/peng-yin/note/issues/119)
+*   [ React应用开发性能优化手段](https://github.com/peng-yin/note/issues/112)
+*   [ 如何设计一个组件？常见的 React 组件设计模式 --- 复合组件](https://github.com/peng-yin/note/issues/101)
+*   [useEffect 最佳实践](https://github.com/peng-yin/note/issues/73)
+*   [React 性能优化](https://github.com/peng-yin/note/issues/60)
+*   [总结React Hooks 使用中遇到的问题](https://github.com/peng-yin/note/issues/55)
+*   [总结React运用TypeScript的问题](https://github.com/peng-yin/note/issues/53)
+*   [React性能优化之memo、 PureComponent、shouldComponentUpdate 的使用](https://github.com/peng-yin/note/issues/49)
+*   [常用的自定义React Hooks](https://github.com/peng-yin/note/issues/45)
+*   [规范commit message, 并自动生成 CHANGELOG](https://github.com/peng-yin/note/issues/43)
+*   [React 组件通信](https://github.com/peng-yin/note/issues/16)
+
+### :microscope: JS
+*   [egg.js vs nest.js && 原理](https://github.com/peng-yin/note/issues/120)
+*   [Lowcode - js沙箱](https://github.com/peng-yin/note/issues/118)
+*   [nestJS学习笔记📒](https://github.com/peng-yin/note/issues/115)
+*   [vs code jsconfig 配置](https://github.com/peng-yin/note/issues/100)
+*   [typescript](https://github.com/peng-yin/note/issues/25)
+*   [优化JavaScript代码的细节](https://github.com/peng-yin/note/issues/5)
+
+### :tophat: Typescript
+*   [Typescript实用的内置类型](https://github.com/peng-yin/note/issues/80)
+*   [Typescript使用技巧](https://github.com/peng-yin/note/issues/79)
+*   [Typescript关键字infer的理解与使用](https://github.com/peng-yin/note/issues/78)
+*   [如何编写高质量TypeScript代码](https://github.com/peng-yin/note/issues/77)
+*   [Typescript 高级技巧](https://github.com/peng-yin/note/issues/76)
+*   [TypeScript 高级类型总结](https://github.com/peng-yin/note/issues/58)
+
+### :art: CSS
+*   [CSS Variables ](https://github.com/peng-yin/note/issues/3)
+
+### :custard: Vue
+*   [Vue-Mixin数据管理(model层)](https://github.com/peng-yin/note/issues/54)
 
