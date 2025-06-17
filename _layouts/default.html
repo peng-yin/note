@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+    {% include head-custom.html %}
+
+{% seo %}
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <a id="a-title" href="{{ '/' | relative_url }}">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </a>
+        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+        <nav>
+          <div class="nav-brand">
+            <a href="{{ site.github.repository_url }}" class="btn github-button">View on GitHub</a>
+          </div>
+          <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            {% for page in site.header_pages %}
+              <li><a href="{{ page | relative_url }}">{{ page | remove: '.md' | capitalize }}</a></li>
+            {% endfor %}
+            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+            <li><a href="{{ '/categories/' | relative_url }}">Categories</a></li>
+            <li><a href="{{ '/tags/' | relative_url }}">Tags</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        {% if page.url == '/' %}
+        <div class="terminal-animation">
+          <span class="terminal-line">Welcome to {{ site.title | default: site.github.repository_name }}</span>
+          <span class="terminal-line">Exploring code, sharing knowledge...</span>
+          <span class="terminal-line">Type 'help' for more information.</span>
+        </div>
+        {% endif %}
+        
+        {{ content }}
+      </section>
+
+      <footer>
+        <p>
+          Powered by <a href="https://pages.github.com">GitHub Pages</a> | 
+          Theme: <a href="https://github.com/pages-themes/hacker">Hacker</a> | 
+          &copy; {{ site.time | date: '%Y' }} {{ site.author | default: site.github.owner_name }}
+        </p>
+        <p>
+          <a href="{{ site.github.owner_url }}">GitHub</a> | 
+          <a href="{{ site.github.repository_url }}/issues">Issues</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html> 

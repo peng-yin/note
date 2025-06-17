@@ -1,0 +1,238 @@
+@import "{{ site.theme }}";
+
+/* 自定义样式，增强黑客主题 */
+
+/* 全局样式 */
+body {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* 标题样式 */
+header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #3f3f3f;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+header h1:before {
+  content: "root@cyberninja:~$ ";
+  color: #00ff00;
+}
+
+header h1:after {
+  content: "_";
+  animation: cursor 1s infinite;
+  color: #00ff00;
+}
+
+@keyframes cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 链接样式 */
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #00ff00;
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+  text-decoration: none;
+}
+
+/* 导航菜单 */
+nav {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  background: rgba(0, 255, 0, 0.1);
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  background: #238636;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #2ea043;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 文章卡片 */
+.post-card {
+  background: rgba(22, 27, 34, 0.7);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 4px solid #30363d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-left-color: #00ff00;
+}
+
+.post-title {
+  margin-top: 0;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 10px;
+}
+
+.post-meta {
+  color: #8b949e;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+/* 代码块和语法高亮 */
+pre, code {
+  background: #161b22;
+  border-radius: 6px;
+  font-family: 'Fira Code', monospace;
+  border: 1px solid #30363d;
+}
+
+pre {
+  padding: 15px;
+  overflow: auto;
+}
+
+code {
+  padding: 2px 5px;
+  color: #ff7b72;
+}
+
+/* 终端动画 */
+.terminal-animation {
+  margin: 30px 0;
+  padding: 20px;
+  background: #0d1117;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-line {
+  display: block;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: type 2s forwards;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.terminal-line:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.terminal-line:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.terminal-line:before {
+  content: "$ ";
+  color: #00ff00;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* 页脚 */
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #30363d;
+  text-align: center;
+  font-size: 0.9em;
+  color: #8b949e;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  nav {
+    flex-direction: column;
+  }
+  
+  nav ul {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 5px 10px;
+  }
+} 

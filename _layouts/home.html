@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<div class="home">
+  {{ content }}
+
+  {% comment %}
+  这是一个静态的博客首页布局，实际上GitHub Issues内容将通过index.md文件展示
+  这里提供了一个卡片式布局的示例，可以在实际部署时配合JavaScript动态加载Issues
+  {% endcomment %}
+  
+  <div class="post-list">
+    {% assign categories = "notes,React,JS,Typescript,CSS,Vue" | split: "," %}
+    
+    {% for category in categories %}
+    <h2 class="category-heading">
+      {% case category %}
+        {% when "notes" %}
+          :jack_o_lantern: Notes
+        {% when "React" %}
+          :coffee: React
+        {% when "JS" %}
+          :microscope: JavaScript
+        {% when "Typescript" %}
+          :tophat: TypeScript
+        {% when "CSS" %}
+          :art: CSS
+        {% when "Vue" %}
+          :custard: Vue
+        {% else %}
+          {{ category }}
+      {% endcase %}
+    </h2>
+    
+    <div class="post-grid">
+      {% for post in site.posts %}
+        {% if post.category == category or post.tags contains category %}
+        <article class="post-card">
+          <h3 class="post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
+          <div class="post-meta">
+            <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+          </div>
+          <div class="post-excerpt">
+            {{ post.excerpt }}
+          </div>
+          <a href="{{ post.url | relative_url }}" class="read-more">Read More &raquo;</a>
+        </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="github-cta">
+    <h3>想看更多文章?</h3>
+    <p>所有文章都以 GitHub Issues 的形式发布。前往 GitHub 查看完整的文章列表和最新更新。</p>
+    <a href="{{ site.github.repository_url }}/issues" class="btn">查看所有文章</a>
+  </div>
+</div>
+
+<style>
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.category-heading {
+  margin-top: 40px;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 10px;
+}
+
+.github-cta {
+  margin: 50px 0;
+  padding: 30px;
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+</style> 
