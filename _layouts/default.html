@@ -8,9 +8,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
-    {% include head-custom.html %}
+    
+    <!-- 网站图标设置 -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+    
+    <!-- 终端动画效果脚本 -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 检查是否是主页
+      if (window.location.pathname === '{{ "/" | relative_url }}' || 
+          window.location.pathname === '{{ site.baseurl }}/' || 
+          window.location.pathname === '{{ site.baseurl }}') {
+        
+        // 确保终端动画元素存在
+        setTimeout(function() {
+          const terminalAnimation = document.querySelector('.terminal-animation');
+          if (terminalAnimation) {
+            const terminalLines = terminalAnimation.querySelectorAll('.terminal-line');
+            
+            // 重置并应用动画
+            terminalLines.forEach((line, index) => {
+              line.style.width = '0';
+              line.style.opacity = '0';
+              
+              setTimeout(() => {
+                line.style.animation = 'none';
+                setTimeout(() => {
+                  line.style.animation = `typewriter 2s forwards ${index * 2}s`;
+                }, 10);
+              }, 100);
+            });
+          }
+        }, 500);
+      }
+    });
+    </script>
 
-{% seo %}
+    {% seo %}
   </head>
 
   <body>
@@ -27,9 +62,6 @@
           </div>
           <ul>
             <li><a href="{{ '/' | relative_url }}">Home</a></li>
-            {% for page in site.header_pages %}
-              <li><a href="{{ page | relative_url }}">{{ page | remove: '.md' | capitalize }}</a></li>
-            {% endfor %}
             <li><a href="{{ '/about/' | relative_url }}">About</a></li>
             <li><a href="{{ '/categories/' | relative_url }}">Categories</a></li>
             <li><a href="{{ '/tags/' | relative_url }}">Tags</a></li>
@@ -46,6 +78,54 @@
           <span class="terminal-line">Exploring code, sharing knowledge...</span>
           <span class="terminal-line">Type 'help' for more information.</span>
         </div>
+
+        <style>
+          /* 内联样式确保动画效果正常工作 */
+          .terminal-animation {
+            margin: 30px 0;
+            padding: 20px;
+            background: #0d1117;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+          }
+          
+          .terminal-line {
+            display: block;
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: typewriter 2s forwards;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+          }
+          
+          .terminal-line:nth-child(2) {
+            animation-delay: 2s;
+          }
+          
+          .terminal-line:nth-child(3) {
+            animation-delay: 4s;
+          }
+          
+          .terminal-line:before {
+            content: "$ ";
+            color: #00ff00;
+            display: inline-block;
+          }
+          
+          @keyframes typewriter {
+            from {
+              width: 0;
+              opacity: 1;
+            }
+            to {
+              width: 100%;
+              opacity: 1;
+            }
+          }
+        </style>
         {% endif %}
         
         {{ content }}

@@ -167,6 +167,7 @@ code {
   border-radius: 8px;
   border: 1px solid #30363d;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* 防止内容溢出 */
 }
 
 .terminal-line {
@@ -176,6 +177,7 @@ code {
   animation: type 2s forwards;
   white-space: nowrap;
   overflow: hidden;
+  width: 0; /* 初始宽度为0 */
 }
 
 .terminal-line:nth-child(2) {
@@ -189,6 +191,7 @@ code {
 .terminal-line:before {
   content: "$ ";
   color: #00ff00;
+  display: inline-block; /* 确保显示为内联块 */
 }
 
 @keyframes type {
