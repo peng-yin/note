@@ -1,7 +1,7 @@
 # 站点基础配置
 title: Peng Yin's Blog
 author: peng-yin
-description: 🚀 探索编程的无限可能 | Keep Learning、Keep Thinking、Keep Focus
+description: 🚀 Keep Learning、Keep Thinking、Keep Focus
 url: "https://peng-yin.github.io/note"
 baseurl: "/note"
 permalink: pretty
