@@ -48,8 +48,8 @@ function categorizeIssue(issue) {
 
 // Function to generate markdown content
 function generateMarkdown(issues) {
-  // Add header with layout frontmatter
-  let markdown = '---\nlayout: default\n---\n\n```js\nI am a web developer, Welcome to my blog\n```\n\n';
+  // Add header with layout frontmatter only
+  let markdown = '---\nlayout: default\n---\n\n';
   
   // Group issues by category
   const categories = {};

@@ -4,7 +4,7 @@
   "description": "GitHub Issues Blog Generator",
   "main": "index.js",
   "scripts": {
-    "ge": "node index.js"
+    "generate": "node index.js"
   },
   "keywords": [
     "github",

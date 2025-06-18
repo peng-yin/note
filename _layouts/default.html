@@ -55,6 +55,7 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <div class="header-subtitle">I am a web developer, Welcome to my blog</div>
       </div>
     </header>
 
@@ -133,6 +134,14 @@
               width: 100%;
               opacity: 1;
             }
+          }
+          
+          /* 新增标题样式 */
+          .header-subtitle {
+            color: #b5e853;
+            font-family: 'Fira Code', monospace;
+            margin-top: 10px;
+            font-size: 16px;
           }
         </style>
         {% endif %}
