@@ -2,10 +2,6 @@
 layout: default
 ---
 
-```js
-I am a web developer, Welcome to my blog
-```
-
 ### :jack_o_lantern: notes
 *   [webpack体积优化及打包速度提升总结](https://github.com/peng-yin/note/issues/122)
 *   [书写高质量SQL的30条建议](https://github.com/peng-yin/note/issues/116)
