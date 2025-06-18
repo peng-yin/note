@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
     
     <!-- 网站图标设置 -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
     
     <!-- 终端动画效果脚本 -->
@@ -35,7 +35,7 @@
               setTimeout(() => {
                 line.style.animation = 'none';
                 setTimeout(() => {
-                  line.style.animation = `typewriter 2s forwards ${index * 2}s`;
+                  line.style.animation = `typewriter 1.5s forwards ${index * 1.8}s`;
                 }, 10);
               }, 100);
             });
@@ -55,18 +55,6 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
-        <nav>
-          <div class="nav-brand">
-            <a href="{{ site.github.repository_url }}" class="btn github-button">View on GitHub</a>
-          </div>
-          <ul>
-            <li><a href="{{ '/' | relative_url }}">Home</a></li>
-            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-            <li><a href="{{ '/categories/' | relative_url }}">Categories</a></li>
-            <li><a href="{{ '/tags/' | relative_url }}">Tags</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -74,9 +62,12 @@
       <section id="main_content">
         {% if page.url == '/' %}
         <div class="terminal-animation">
-          <span class="terminal-line">Welcome to {{ site.title | default: site.github.repository_name }}</span>
-          <span class="terminal-line">Exploring code, sharing knowledge...</span>
-          <span class="terminal-line">Type 'help' for more information.</span>
+          <span class="terminal-line">我是银鹏，专注前端与全栈开发</span>
+          <span class="terminal-line">前端架构与技术选型：熟悉 SPA、微前端、SSR、跨端小程序、H5 应用、Low Code、数据大屏等架构方案</span>
+          <span class="terminal-line">NodeJS 后端开发：具备生产级 RESTful API 构建经验，熟练使用 Nest.js/Egg.js 框架</span>
+          <span class="terminal-line">前端工程化：掌握前端项目构建、打包、发布全流程，熟悉自动化测试体系搭建</span>
+          <span class="terminal-line">全栈运维能力：熟练使用 Jenkins、Linux 命令、Nginx、Docker 等工具</span>
+          <span class="terminal-line">大模型开发基础：了解大模型技术原理，具备 LangChain、MCP及 Agent 开发实践经验</span>
         </div>
 
         <style>
@@ -95,18 +86,36 @@
             display: block;
             margin-bottom: 10px;
             opacity: 0;
-            animation: typewriter 2s forwards;
+            animation: typewriter 1.5s forwards;
             white-space: nowrap;
             overflow: hidden;
             width: 0;
+            color: #b5e853;
           }
           
           .terminal-line:nth-child(2) {
-            animation-delay: 2s;
+            animation-delay: 1.8s;
+            color: #63c0f5;
           }
           
           .terminal-line:nth-child(3) {
-            animation-delay: 4s;
+            animation-delay: 3.6s;
+            color: #f0c674;
+          }
+          
+          .terminal-line:nth-child(4) {
+            animation-delay: 5.4s;
+            color: #8abeb7;
+          }
+          
+          .terminal-line:nth-child(5) {
+            animation-delay: 7.2s;
+            color: #b294bb;
+          }
+          
+          .terminal-line:nth-child(6) {
+            animation-delay: 9.0s;
+            color: #70c0b1;
           }
           
           .terminal-line:before {
@@ -133,8 +142,7 @@
 
       <footer>
         <p>
-          Powered by <a href="https://pages.github.com">GitHub Pages</a> | 
-          Theme: <a href="https://github.com/pages-themes/hacker">Hacker</a> | 
+          Created by <a href="https://github.com/peng-yin">peng-yin</a> | 
           &copy; {{ site.time | date: '%Y' }} {{ site.author | default: site.github.owner_name }}
         </p>
         <p>

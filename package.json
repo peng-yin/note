@@ -1,0 +1,21 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "description": "GitHub Issues Blog Generator",
+  "main": "index.js",
+  "scripts": {
+    "ge": "node index.js"
+  },
+  "keywords": [
+    "github",
+    "issues",
+    "blog",
+    "markdown"
+  ],
+  "author": "Peng Yin",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1"
+  }
+}

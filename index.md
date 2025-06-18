@@ -3,18 +3,7 @@ layout: default
 ---
 
 ```js
-/**
- * Welcome to CodeNinja's Lab
- * A digital garden of web development knowledge
- */
-function introduceMyself() {
-  return {
-    name: 'Peng Yin',
-    title: 'Web Developer',
-    skills: ['JavaScript', 'TypeScript', 'React', 'Vue', 'Node.js'],
-    focus: ['前端工程化', '性能优化', '函数式编程', 'TypeScript进阶']
-  };
-}
+I am a web developer, Welcome to my blog
 ```
 
 ### :jack_o_lantern: notes

@@ -1,10 +1,10 @@
 # 站点基础配置
-title: CodeNinja's Lab
+title: Peng Yin's Blog
 author: peng-yin
 description: 🚀 探索编程的无限可能 | Keep Learning、Keep Thinking、Keep Focus
 url: "https://peng-yin.github.io/note"
 baseurl: "/note"
-permalink: /:year/:month/:day/:title/
+permalink: pretty
 
 # 社交链接
 social_links:
@@ -14,7 +14,7 @@ social_links:
 
 # 主题配置
 remote_theme: pages-themes/hacker@v0.2.0
-theme: jekyll-theme-hacker
+theme: jekyll-theme-minimal
 
 # 额外设置
 show_downloads: false
@@ -65,4 +65,23 @@ twitter:
 
 # 博客功能增强
 paginate: 10
-paginate_path: "/page:num/" 
+paginate_path: "/page:num/"
+
+# Optimize GitHub Pages settings
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Additional settings
+exclude:
+  - .env
+  - node_modules
+  - package.json
+  - package-lock.json
+  - .gitignore 
