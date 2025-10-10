@@ -48,6 +48,7 @@ function categorizeIssue(issue) {
 
 // Function to generate markdown content
 function generateMarkdown(issues) {
+  console.log(issues)
   // Add header with layout frontmatter only
   let markdown = '---\nlayout: default\n---\n\n';
   
