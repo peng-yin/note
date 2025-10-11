@@ -3,6 +3,9 @@ layout: default
 ---
 
 ### :jack_o_lantern: notes
+*   [AI 通用能力之- useStreamRender 流式渲染](https://github.com/peng-yin/note/issues/128)
+*   [如何打包一个现代化的npm包](https://github.com/peng-yin/note/issues/127)
+*   [实现一个 AI 驱动的知识库](https://github.com/peng-yin/note/issues/126)
 *   [webpack体积优化及打包速度提升总结](https://github.com/peng-yin/note/issues/122)
 *   [书写高质量SQL的30条建议](https://github.com/peng-yin/note/issues/116)
 *   [低代码](https://github.com/peng-yin/note/issues/114)
