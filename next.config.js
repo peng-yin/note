@@ -4,8 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // 如果你的仓库名不是 username.github.io，需要设置 basePath
-  // basePath: '/your-repo-name',
+  basePath: '/note',
 }
 
 module.exports = nextConfig
