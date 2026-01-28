@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: #fff;
+}
+
+.font-mono {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', 'Source Code Pro', monospace;
+}
+
+/* Custom scrollbar for terminal */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Shooting stars animation */
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-500px) translateY(500px) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(34, 197, 94, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 1), 0 0 40px rgba(34, 197, 94, 0.5);
+  animation: shooting-star 3s linear infinite;
+}
+
+.shooting-star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 3px;
+  background: linear-gradient(to right, rgba(34, 197, 94, 0), rgba(34, 197, 94, 0.8), rgba(34, 197, 94, 0));
+  border-radius: 50%;
+}
+
+.shooting-star:nth-child(1) {
+  top: 10%;
+  right: 10%;
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+
+.shooting-star:nth-child(2) {
+  top: 20%;
+  right: 30%;
+  animation-delay: 1.5s;
+  animation-duration: 2.5s;
+}
+
+.shooting-star:nth-child(3) {
+  top: 30%;
+  right: 50%;
+  animation-delay: 3s;
+  animation-duration: 3.5s;
+}
+
+.shooting-star:nth-child(4) {
+  top: 40%;
+  right: 20%;
+  animation-delay: 4.5s;
+  animation-duration: 2.8s;
+}
+
+.shooting-star:nth-child(5) {
+  top: 15%;
+  right: 70%;
+  animation-delay: 2s;
+  animation-duration: 3.2s;
+}
+
+.shooting-star:nth-child(6) {
+  top: 50%;
+  right: 40%;
+  animation-delay: 5s;
+  animation-duration: 2.7s;
+}

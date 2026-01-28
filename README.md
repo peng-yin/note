@@ -1,7 +1,46 @@
+# 个人在线简历
 
-## 🚀  Welcome to my blog
+基于 Next.js 构建的现代化个人简历网站。
 
-> 我的博客，记录学习的一些笔记
+## 技术栈
 
-[](https://user-images.githubusercontent.com/25680922/138227719-ccdbda19-e67c-40be-95b8-16d69f37c895.png)
-![image](https://user-images.githubusercontent.com/25680922/233606033-53b92657-c71f-4446-8b94-9fa4b819705f.png)
+- **框架**: Next.js 14 (App Router)
+- **语言**: TypeScript
+- **样式**: Tailwind CSS
+- **部署**: GitHub Pages
+- **特性**: 
+  - 暗黑极客风格
+  - 打字机效果
+  - 流星背景动画
+  - 交互式终端
+  - 响应式设计
+
+## 快速开始
+
+### 安装依赖
+
+```bash
+npm install
+# 或
+pnpm install
+# 或
+yarn install
+```
+
+### 开发模式
+
+```bash
+npm run dev
+```
+
+访问 [http://localhost:3000](http://localhost:3000) 查看效果。
+
+### 构建生产版本
+
+```bash
+npm run build
+```
+
+## License
+
+MIT
