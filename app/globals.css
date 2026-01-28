@@ -33,10 +33,29 @@ body {
   background: #444;
 }
 
+/* Terminal input cursor */
+input[type="text"]:focus {
+  caret-color: #22c55e;
+}
+
+input[type="text"]::placeholder {
+  color: #4b5563;
+}
+
+/* Make caret thicker */
+@supports (caret-shape: block) {
+  input[type="text"] {
+    caret-shape: block;
+  }
+}
+
 /* Shooting stars animation */
 @keyframes shooting-star {
   0% {
     transform: translateX(0) translateY(0) rotate(-45deg);
+    opacity: 0;
+  }
+  5% {
     opacity: 1;
   }
   70% {
@@ -55,7 +74,9 @@ body {
   background: rgba(34, 197, 94, 1);
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(34, 197, 94, 1), 0 0 40px rgba(34, 197, 94, 0.5);
-  animation: shooting-star 3s linear infinite;
+  transform: rotate(-45deg);
+  opacity: 0;
+  will-change: transform, opacity;
 }
 
 .shooting-star::before {
@@ -73,41 +94,41 @@ body {
 .shooting-star:nth-child(1) {
   top: 10%;
   right: 10%;
+  animation: shooting-star 3s linear infinite;
   animation-delay: 0s;
-  animation-duration: 3s;
 }
 
 .shooting-star:nth-child(2) {
   top: 20%;
   right: 30%;
+  animation: shooting-star 2.5s linear infinite;
   animation-delay: 1.5s;
-  animation-duration: 2.5s;
 }
 
 .shooting-star:nth-child(3) {
   top: 30%;
   right: 50%;
+  animation: shooting-star 3.5s linear infinite;
   animation-delay: 3s;
-  animation-duration: 3.5s;
 }
 
 .shooting-star:nth-child(4) {
   top: 40%;
   right: 20%;
+  animation: shooting-star 2.8s linear infinite;
   animation-delay: 4.5s;
-  animation-duration: 2.8s;
 }
 
 .shooting-star:nth-child(5) {
   top: 15%;
   right: 70%;
+  animation: shooting-star 3.2s linear infinite;
   animation-delay: 2s;
-  animation-duration: 3.2s;
 }
 
 .shooting-star:nth-child(6) {
   top: 50%;
   right: 40%;
+  animation: shooting-star 2.7s linear infinite;
   animation-delay: 5s;
-  animation-duration: 2.7s;
 }
