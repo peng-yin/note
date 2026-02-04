@@ -2,11 +2,14 @@
   "name": "online-resume",
   "version": "1.0.0",
   "description": "个人在线简历 - Next.js",
+  "packageManager": "pnpm@8.15.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\""
   },
   "keywords": [
     "resume",
@@ -27,6 +30,9 @@
     "typescript": "^5.4.0",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^3.4.0",
+    "prettier": "^3.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0"
   }
 }

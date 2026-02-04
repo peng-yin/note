@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 export default function Home() {
   const [terminalInput, setTerminalInput] = useState('')
@@ -78,13 +78,10 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-gray-100 relative overflow-hidden">
       {/* Shooting Stars Background */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="shooting-star"></div>
-        <div className="shooting-star"></div>
-        <div className="shooting-star"></div>
-        <div className="shooting-star"></div>
-        <div className="shooting-star"></div>
-        <div className="shooting-star"></div>
+      <div className="fixed inset-0 pointer-events-none" aria-hidden="true">
+        {[...Array(6)].map((_, i) => (
+          <div key={i} className="shooting-star"></div>
+        ))}
       </div>
 
       {/* WeChat Modal */}
@@ -92,6 +89,9 @@ export default function Home() {
         <div 
           className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4 backdrop-blur-sm"
           onClick={() => setShowWeChatModal(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="wechat-modal-title"
         >
           <div 
             className="bg-gray-900 rounded-lg shadow-2xl max-w-md w-full p-8 relative border border-green-500/30"
@@ -100,6 +100,7 @@ export default function Home() {
             <button
               onClick={() => setShowWeChatModal(false)}
               className="absolute top-4 right-4 text-gray-500 hover:text-green-500 transition-colors"
+              aria-label="Close modal"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -107,11 +108,11 @@ export default function Home() {
             </button>
 
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-2xl font-bold font-mono">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-2xl font-bold font-mono" aria-hidden="true">
                 PY
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-100 font-mono">Peng Yin</h3>
+                <h3 id="wechat-modal-title" className="text-xl font-bold text-gray-100 font-mono">Peng Yin</h3>
                 <p className="text-sm text-gray-400 font-mono">°Panta.Q | 阿联酋 Dubayy</p>
               </div>
             </div>
@@ -129,7 +130,7 @@ export default function Home() {
               <div className="bg-white p-4 rounded-lg inline-block mb-4">
                 <img
                   src="/note/wechat-qr.jpg"
-                  alt="WeChat QR Code"
+                  alt="WeChat QR Code for Peng Yin"
                   width={280}
                   height={280}
                   className="w-full h-auto"
@@ -155,7 +156,7 @@ export default function Home() {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-mono">
-                <span className="text-gray-400">&gt; </span>
+                <span className="text-gray-400" aria-hidden="true">&gt; </span>
                 <span className="text-green-500">Peng Yin</span>
               </h1>
               
@@ -174,9 +175,9 @@ export default function Home() {
                 </p>
                 <p className="text-gray-400 pl-4">
                   <span className="text-blue-400">focus</span>: <span className="text-yellow-400">&quot;</span>
-                  <span className="text-yellow-400 inline-block min-w-[200px]">
+                  <span className="text-yellow-400 inline-block min-w-[200px]" aria-live="polite">
                     {displayText}
-                    <span className="animate-pulse">|</span>
+                    <span className="animate-pulse" aria-hidden="true">|</span>
                   </span>
                   <span className="text-yellow-400">&quot;</span>;
                 </p>
@@ -184,7 +185,7 @@ export default function Home() {
               </div>
 
               {/* Buttons */}
-              <div className="flex flex-wrap gap-3 mb-6">
+              <nav className="flex flex-wrap gap-3 mb-6" aria-label="Social links">
                 <a
                   href="https://github.com/peng-yin"
                   target="_blank"
@@ -219,18 +220,18 @@ export default function Home() {
                 <button
                   onClick={() => setShowWeChatModal(true)}
                   className="group inline-flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded border border-gray-700 hover:border-gray-600 transition-all font-mono text-sm relative"
-                  title="Click to view WeChat QR code"
+                  aria-label="View WeChat QR code"
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/>
                   </svg>
                   <span className="group-hover:translate-x-0.5 transition-transform">WeChat</span>
-                  <span className="absolute -top-1 -right-1 flex h-3 w-3">
+                  <span className="absolute -top-1 -right-1 flex h-3 w-3" aria-hidden="true">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                   </span>
                 </button>
-              </div>
+              </nav>
 
               {/* Additional Info */}
               <div className="text-xs font-mono text-gray-500 space-y-1">
@@ -245,7 +246,7 @@ export default function Home() {
             <div className="w-full max-w-2xl">
               <div className="bg-gray-900 rounded-lg shadow-2xl overflow-hidden border border-green-500/30">
                 <div className="bg-gray-800 px-4 py-3 flex items-center justify-between border-b border-green-500/30">
-                  <div className="flex gap-2">
+                  <div className="flex gap-2" aria-hidden="true">
                     <div className="w-3 h-3 rounded-full bg-red-500"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
@@ -272,7 +273,7 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  <div className="space-y-1 mb-3 max-h-48 overflow-y-auto text-sm">
+                  <div className="space-y-1 mb-3 max-h-48 overflow-y-auto text-sm" role="log" aria-live="polite" aria-atomic="false">
                     {terminalOutput.slice(7, -1).map((line, i) => (
                       <div key={i} className={line.startsWith('$') ? 'text-green-500' : 'text-gray-400'}>
                         {line}
@@ -281,8 +282,10 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-center gap-2 text-base">
-                    <span className="text-green-500">$</span>
+                    <span className="text-green-500" aria-hidden="true">$</span>
+                    <label htmlFor="terminal-input" className="sr-only">Terminal command input</label>
                     <input
+                      id="terminal-input"
                       type="text"
                       value={terminalInput}
                       onChange={(e) => setTerminalInput(e.target.value)}
@@ -291,6 +294,7 @@ export default function Home() {
                       style={{ caretColor: '#22c55e' }}
                       placeholder="Type a command..."
                       autoFocus
+                      aria-label="Terminal command input"
                     />
                   </div>
                 </div>
