@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 
 export default function Home() {
   const [terminalInput, setTerminalInput] = useState('')
@@ -9,7 +9,7 @@ export default function Home() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   
-  const texts = ['AI Agent', 'Full-stack development']
+  const texts = useMemo(() => ['AI Agent', 'Full-stack development'], [])
   
   const [terminalOutput, setTerminalOutput] = useState<string[]>([
     '$ help',
@@ -128,6 +128,7 @@ export default function Home() {
               </div>
               
               <div className="bg-white p-4 rounded-lg inline-block mb-4">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/note/wechat-qr.jpg"
                   alt="WeChat QR Code for Peng Yin"
@@ -235,8 +236,8 @@ export default function Home() {
 
               {/* Additional Info */}
               <div className="text-xs font-mono text-gray-500 space-y-1">
-                <p><span className="text-gray-600">// </span>Open to collaboration and new opportunities</p>
-                <p><span className="text-gray-600">// </span>Building the future with AI and modern web tech</p>
+                <p><span className="text-gray-600">{'//'} </span>Open to collaboration and new opportunities</p>
+                <p><span className="text-gray-600">{'//'} </span>Building the future with AI and modern web tech</p>
               </div>
             </div>
           </div>
