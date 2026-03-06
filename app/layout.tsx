@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -58,7 +59,20 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://peng-yin.github.io/note" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script id="baidu-analytics" strategy="afterInteractive">
+          {`
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?75bc94cfdb080e26f28d152784bbe787";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+          `}
+        </Script>
+      </body>
     </html>
   )
 }
